@@ -1,52 +1,64 @@
 body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f1eb;
   margin: 0;
-  font-family: 'Outfit', sans-serif;
-  background-color: #f2f0eb;
-  display: flex;
+  padding: 0;
 }
 
-.sidebar {
-  width: 60px;
-  background: white;
-  padding: 1em 0;
-  text-align: center;
-  font-size: 24px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-}
-
-.main {
-  padding: 2em;
-  flex-grow: 1;
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
-  margin-bottom: 2em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header p {
+  color: #333;
 }
 
 button {
-  background: black;
-  color: white;
-  padding: 10px 20px;
+  padding: 0.75rem 1.5rem;
+  background-color: #000;
+  color: #fff;
   border: none;
-  font-weight: bold;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .carousel {
   display: flex;
   overflow-x: auto;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .book {
-  min-width: 160px;
-  max-width: 180px;
+  min-width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex-shrink: 0;
   text-align: center;
 }
 
 .book img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
+
+.book h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
