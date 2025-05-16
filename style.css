@@ -1,8 +1,9 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f1eb;
-  margin: 0;
-  padding: 0;
+.book img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
 }
 
 .container {
