@@ -1,49 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book Showcase</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Levi Reads</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #faf8f2;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 0.2em;
+    }
+    p {
+      margin-top: 0;
+      color: #555;
+    }
+    .books {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .book {
+      width: 160px;
+    }
+    .book img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .book img:hover {
+      transform: scale(1.05);
+    }
+    .book-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .book-author {
+      font-style: italic;
+      color: #444;
+      font-size: 0.9em;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .button {
+      background-color: black;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+    }
+    .button:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 <body>
-  <div class="sidebar">
-    <div class="nav-icons">🏠<br>📚<br>🔍</div>
-  </div>
+  <h1>Keep the story going..</h1>
+  <p>Don’t let the story end. Keep reading and immerse yourself in new adventures.</p>
+  <a class="button" href="https://www.amazon.in/" target="_blank">Start Reading →</a>
 
-  <div class="main">
-    <header>
-      <h1>Keep the story going..</h1>
-      <p>Don’t let the story end. Keep reading and immerse yourself in new adventures.</p>
-      <button>Start Reading →</button>
-    </header>
-
-    <section class="carousel">
-      <div class="book">
-        <a href="https://www.amazon.in/dp/B084F4PFGD" target="_blank">
-          <img src="https://m.media-amazon.com/images/I/81A-5bSJi4L.jpg" alt="Beauty and the Beast">
-        </a>
-        <h3>Beauty and the Beast</h3>
-        <p><i>Disney</i></p>
-      </div>
-
-      <div class="book">
-        <a href="https://www.amazon.in/dp/B07D2GWRN5" target="_blank">
-          <img src="https://m.media-amazon.com/images/I/91H2w3YVZLL.jpg" alt="Fire and Blood">
-        </a>
-        <h3>Fire and Blood</h3>
-        <p><i>George R.R. Martin</i></p>
-      </div>
-
-      <div class="book">
-        <a href="https://www.amazon.in/dp/B004QZ9P4I" target="_blank">
-          <img src="https://m.media-amazon.com/images/I/91geDtzsS5L.jpg" alt="Chronicles of Narnia">
-        </a>
-        <h3>Chronicles of Narnia</h3>
-        <p><i>C.S. Lewis</i></p>
-      </div>
-    </section>
+  <div class="books">
+    <div class="book">
+      <a href="https://www.amazon.in/dp/B004Q7R9AI" target="_blank">
+        <img src="images/beauty.jpg" alt="Beauty and the Beast">
+        <div class="book-title">Beauty and the Beast</div>
+        <div class="book-author">Disney</div>
+      </a>
+    </div>
+    <div class="book">
+      <a href="https://www.amazon.in/dp/B07DK5PZFY" target="_blank">
+        <img src="images/fire.jpg" alt="Fire and Blood">
+        <div class="book-title">Fire and Blood</div>
+        <div class="book-author">George R.R. Martin</div>
+      </a>
+    </div>
+    <div class="book">
+      <a href="https://www.amazon.in/dp/B004QZASYO" target="_blank">
+        <img src="images/narnia.jpg" alt="Chronicles of Narnia">
+        <div class="book-title">Chronicles of Narnia</div>
+        <div class="book-author">C.S. Lewis</div>
+      </a>
+    </div>
   </div>
 </body>
 </html>
