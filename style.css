@@ -1,65 +1,80 @@
-.book img {
-  width: 150px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
 
-.container {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f7f2;
+    color: #111;
+    line-height: 1.6;
+    padding: 20px;
 }
 
 header {
-  text-align: center;
-  margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-header p {
-  color: #333;
+header .cta {
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-button {
-  padding: 0.75rem 1.5rem;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 1rem;
+.category {
+    margin-bottom: 50px;
+}
+
+.category h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-left: 5px solid #000;
+    padding-left: 10px;
 }
 
 .carousel {
-  display: flex;
-  overflow-x: auto;
-  gap: 2rem;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
 }
 
-.book {
-  min-width: 200px;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  flex-shrink: 0;
-  text-align: center;
+.book-card {
+    flex: 0 0 auto;
+    width: 200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
 }
 
-.book img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.book h2 {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
+.book-card h3 {
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+}
+
+.buy-button {
+    display: inline-block;
+    margin-top: 10px;
+    background: #000;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
 }
 
