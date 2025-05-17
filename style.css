@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f5f7fb;
+    background-color: #f8f7ee; /* Light beige background */
     color: #333;
 }
 
@@ -19,7 +19,7 @@ body {
 /* Sidebar Styles */
 .sidebar {
     width: 240px;
-    background-color: #fff;
+    background-color: #f5f5dc; /* Beige */
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
     padding: 20px;
     position: fixed;
@@ -34,7 +34,7 @@ body {
     margin-bottom: 40px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #4361ee;
+    color: #8b7355; /* Beige brown for logo */
 }
 
 .logo i {
@@ -62,13 +62,13 @@ body {
 }
 
 .nav-items li:hover {
-    background-color: #f0f4ff;
-    color: #4361ee;
+    background-color: #f0ebd8; /* Light beige hover */
+    color: #8b7355;
 }
 
 .nav-items li.active {
-    background-color: #4361ee;
-    color: white;
+    background-color: #d6cca9; /* Medium beige for active state */
+    color: #5d4c2e;
 }
 
 /* Main Content Styles */
@@ -82,7 +82,7 @@ body {
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: #f5f5dc; /* Beige */
     border-radius: 10px;
     padding: 12px 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -122,8 +122,8 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #4361ee, #3a0ca3);
-    color: white;
+    background: linear-gradient(135deg, #d6cca9, #a39171); /* Beige gradient */
+    color: #3a3a3a;
     border-radius: 20px;
     padding: 40px;
     margin-bottom: 40px;
@@ -149,8 +149,8 @@ body {
 }
 
 .primary-btn {
-    background-color: white;
-    color: #4361ee;
+    background-color: #f5f5dc; /* Beige */
+    color: #8b7355; /* Beige brown */
     border: none;
     border-radius: 8px;
     padding: 12px 24px;
@@ -204,7 +204,7 @@ body {
     height: 36px;
     border: 1px solid #e5e7eb;
     border-radius: 50%;
-    background-color: white;
+    background-color: #f5f5dc; /* Beige */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,11 +213,11 @@ body {
 }
 
 .prev-btn:hover, .next-btn:hover {
-    background-color: #f5f7fb;
+    background-color: #e6e2d3; /* Slightly darker beige on hover */
 }
 
 .view-all {
-    color: #4361ee;
+    color: #8b7355; /* Beige brown */
     text-decoration: none;
     font-weight: 500;
 }
@@ -231,7 +231,7 @@ body {
 }
 
 .book-item {
-    background-color: white;
+    background-color: #f5f5dc; /* Beige */
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
@@ -278,7 +278,7 @@ body {
 }
 
 .read-more {
-    color: #4361ee;
+    color: #8b7355; /* Beige brown */
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
@@ -290,7 +290,7 @@ body {
 }
 
 .reading-card {
-    background-color: white;
+    background-color: #f5f5dc; /* Beige */
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
@@ -331,7 +331,7 @@ body {
 
 .progress {
     height: 100%;
-    background-color: #4361ee;
+    background-color: #8b7355; /* Beige brown */
     border-radius: 3px;
 }
 
@@ -341,8 +341,8 @@ body {
 }
 
 .continue-btn {
-    background-color: #4361ee;
-    color: white;
+    background-color: #d6cca9; /* Medium beige */
+    color: #5d4c2e; /* Dark beige brown */
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
@@ -352,7 +352,7 @@ body {
 }
 
 .continue-btn:hover {
-    background-color: #3a0ca3;
+    background-color: #a39171; /* Darker beige on hover */
 }
 
 /* Responsive Styles */
