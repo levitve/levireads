@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keep the Story Going</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeviReads - Book Showcase</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
     <header>
-      <h1>Keep the story going..</h1>
-      <p>Don’t let the story end just yet. Continue reading your last book and immerse yourself in the world of literature.</p>
-      <button>Start Reading →</button>
+        <h1>Keep the story going..</h1>
+        <p>Don't let the story end just yet. Continue reading your last book and immerse yourself in new adventures.</p>
+        <button class="cta">Start Reading →</button>
     </header>
 
-    <section class="carousel">
-      <div class="book">
-        <img src="images/beauty.jpg" alt="Beauty and the Beast">
-        <h2>Beauty and the Beast</h2>
-        <p><em>Disney</em></p>
-      </div>
-      <div class="book">
-        <img src="images/fire.jpg" alt="Fire and Blood">
-        <h2>Fire and Blood</h2>
-        <p><em>George R. R. Martin</em></p>
-      </div>
-      <div class="book">
-        <img src="images/narnia.jpg" alt="Chronicles of Narnia">
-        <h2>Chronicles of Narnia</h2>
-        <p><em>C.S. Lewis</em></p>
-      </div>
-      <!-- Add more books as needed -->
+    <section class="category">
+        <h2>Classics</h2>
+        <div class="carousel">
+            <div class="book-card">
+                <img src="assets/images/beauty.jpg" alt="Beauty and the Beast">
+                <h3>Beauty and the Beast</h3>
+                <p><em>by Disney</em></p>
+                <a href="https://www.amazon.com/dp/B004Q79BPA?tag=your-affiliate-tag" target="_blank" class="buy-button">View on Amazon</a>
+            </div>
+            <div class="book-card">
+                <img src="assets/images/fireblood.jpg" alt="Fire and Blood">
+                <h3>Fire and Blood</h3>
+                <p><em>by George R. R. Martin</em></p>
+                <a href="https://www.amazon.com/dp/B07C54NNR5?tag=your-affiliate-tag" target="_blank" class="buy-button">View on Amazon</a>
+            </div>
+            <div class="book-card">
+                <img src="assets/images/narnia.jpg" alt="Chronicles of Narnia">
+                <h3>The Chronicles of Narnia</h3>
+                <p><em>by C.S. Lewis</em></p>
+                <a href="https://www.amazon.com/dp/B000VJRT4Y?tag=your-affiliate-tag" target="_blank" class="buy-button">View on Amazon</a>
+            </div>
+        </div>
     </section>
-  </div>
 
-  <script src="script.js"></script>
+    <section class="category">
+        <h2>Romance</h2>
+        <div class="carousel">
+            <div class="book-card">
+                <img src="assets/images/romance1.jpg" alt="Romantic Book 1">
+                <h3>City of Ashes</h3>
+                <p><em>by Friedrich Wilhelm</em></p>
+                <a href="https://www.amazon.com/dp/YOURCODE?tag=your-affiliate-tag" target="_blank" class="buy-button">View on Amazon</a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
