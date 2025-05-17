@@ -21,9 +21,9 @@
                 <li><a href="#"><i class="far fa-heart"></i></a></li>
                 <li><a href="#"><i class="fas fa-cog"></i></a></li>
             </ul>
-            <div class="menu-toggle">
+            <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </nav>
 
         <!-- Main Content Area -->
@@ -36,7 +36,7 @@
                 </div>
                 <div class="user-actions">
                     <div class="user-profile">
-                        <img src="/api/placeholder/32/32" alt="Levitive"/>
+                        <img src="https://via.placeholder.com/32" alt="Levitive"/>
                         <span>Levitive</span>
                     </div>
                     <div class="notifications">
@@ -46,9 +46,9 @@
             </header>
 
             <!-- Hero Section -->
-            <section class="hero-section">
+            <section class="hero-section" aria-labelledby="hero-heading">
                 <div class="hero-content">
-                    <h1>Keep the story going..</h1>
+                    <h1 id="hero-heading">Keep the story going..</h1>
                     <p>Don't let the story end just yet. Continue reading your last book and immerse yourself in the world of literature.</p>
                     <button class="cta-button">Start reading <i class="fas fa-arrow-right"></i></button>
                 </div>
@@ -63,59 +63,63 @@
                     </div>
                     <div class="author-info">
                         <h3>Stephen King</h3>
-                        <span class="author-tag">author</span>
+                        <span class="author-tag">Author</span>
                         <p class="author-description">
                             "Fear can hold you prisoner. Hope can set you free."
                         </p>
-                        <div class="navigation-buttons">
-                            <button class="nav-prev"><i class="fas fa-arrow-left"></i></button>
-                            <button class="nav-next"><i class="fas fa-arrow-right"></i></button>
-                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Book Carousel Section -->
-            <section class="book-carousel">
-                <div class="book-item">
-                    <div class="book-cover">
-                        <img src="/api/placeholder/150/220" alt="Beauty and the Beast"/>
-                    </div>
-                    <h3>Beauty and the Beast</h3>
-                    <p class="publisher">Disney</p>
+            <section class="book-carousel-section" aria-labelledby="carousel-heading">
+                <h2 id="carousel-heading">Featured Books</h2>
+                <div class="carousel-controls">
+                    <button class="nav-prev"><i class="fas fa-arrow-left"></i></button>
+                    <button class="nav-next"><i class="fas fa-arrow-right"></i></button>
                 </div>
-                <div class="book-item featured">
-                    <div class="book-cover">
-                        <img src="/api/placeholder/180/260" alt="Fire and Blood"/>
+                <div class="book-carousel">
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/150x220" alt="Beauty and the Beast"/>
+                        </div>
+                        <h3>Beauty and the Beast</h3>
+                        <p class="publisher">Disney</p>
                     </div>
-                    <h3>Fire and Blood - A Game of Thrones series</h3>
-                </div>
-                <div class="book-item">
-                    <div class="book-cover">
-                        <img src="/api/placeholder/150/220" alt="The Chronicles of Narnia"/>
+                    <div class="book-item featured">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x260" alt="Fire and Blood"/>
+                        </div>
+                        <h3>Fire and Blood - A Game of Thrones series</h3>
                     </div>
-                    <h3>The Chronicles of Narnia</h3>
-                </div>
-                <div class="book-item">
-                    <div class="book-cover">
-                        <img src="/api/placeholder/150/220" alt="Deadpool Samurai"/>
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/150x220" alt="The Chronicles of Narnia"/>
+                        </div>
+                        <h3>The Chronicles of Narnia</h3>
                     </div>
-                    <h3>Deadpool Samurai edition</h3>
-                    <p class="publisher">Marvel</p>
-                </div>
-                <div class="book-item">
-                    <div class="book-cover">
-                        <img src="/api/placeholder/150/220" alt="A Long Way Home"/>
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/150x220" alt="Deadpool Samurai"/>
+                        </div>
+                        <h3>Deadpool Samurai Edition</h3>
+                        <p class="publisher">Marvel</p>
                     </div>
-                    <h3>A Long Way Home</h3>
-                    <p class="publisher">The Book House</p>
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/150x220" alt="A Long Way Home"/>
+                        </div>
+                        <h3>A Long Way Home</h3>
+                        <p class="publisher">The Book House</p>
+                    </div>
                 </div>
             </section>
 
             <!-- Collection Promotion -->
-            <section class="collection-promo">
+            <section class="collection-promo" aria-labelledby="promo-heading">
+                <h2 id="promo-heading" class="visually-hidden">Collection Promo</h2>
                 <div class="promo-icon"><i class="fas fa-gift"></i></div>
-                <p>Got chance to check out the <span class="highlight">new collection</span> of Harry Potter? It's a must-read for any fan of the series, don't miss out!</p>
+                <p>Got a chance to check out the <span class="highlight">new collection</span> of Harry Potter? It's a must-read for any fan of the series. Don’t miss out!</p>
                 <div class="progress">
                     <span>04</span> / 60 books
                 </div>
@@ -123,6 +127,7 @@
         </main>
     </div>
 
+    <!-- Carousel Scrolling Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const carousel = document.querySelector('.book-carousel');
@@ -131,14 +136,14 @@
 
             prevBtn.addEventListener('click', function () {
                 carousel.scrollBy({
-                    left: -200,
+                    left: -300,
                     behavior: 'smooth'
                 });
             });
 
             nextBtn.addEventListener('click', function () {
                 carousel.scrollBy({
-                    left: 200,
+                    left: 300,
                     behavior: 'smooth'
                 });
             });
