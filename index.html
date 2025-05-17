@@ -3,38 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeviReads - Book Showcase</title>
+    <title>LeviReads - Premium Book Experience</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Keep the story going..</h1>
-        <p>Don't let the story end just yet. Continue reading your last book and immerse yourself in new adventures.</p>
-        <button class="cta">Start Reading →</button>
-    </header>
-
-    <section class="category">
-        <h2>Classics</h2>
-        <div class="carousel">
-            <div class="book-card">
-                <img src="images/ataleoftwocities.jpg" alt="A Tale of Two Cities">
-                <h3>A Tale of Two Cities</h3>
-                <p><em>by Charles Dickens</em></p>
-                <a href="https://amzn.to/43xLlTA" target="_blank" class="buy-button">View on Amazon</a>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
             </div>
-        </div>
-    </section>
-
-    <section class="category">
-        <h2>Romance</h2>
-        <div class="carousel">
-            <div class="book-card">
-                <img src="images/lovehypnothesis.jpg" alt="The Love Hypnothesis">
-                <h3>The Love Hypnothesis</h3>
-                <p><em>by Ali Hazelwood</em></p>
-                <a href="https://amzn.to/3GZ1Ijf" target="_blank" class="buy-button">View on Amazon</a>
+            <ul class="nav-items">
+                <li class="active"><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#"><i class="fas fa-bookmark"></i></a></li>
+                <li><a href="#"><i class="fas fa-clock"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-cog"></i></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
-        </div>
-    </section>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header with Search and User Info -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search book name, author, edition...">
+                </div>
+                <div class="user-actions">
+                    <div class="user-profile">
+                        <img src="https://via.placeholder.com/32" alt="User Profile">
+                        <span>Levi Reader</span>
+                    </div>
+                    <div class="notifications">
+                        <i class="far fa-bell"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Keep the story going..</h1>
+                    <p>Don't let the story end just yet. Continue reading your last book and immerse yourself in the world of literature.</p>
+                    <button class="cta-button">Start reading <i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Featured Author Card -->
+                <div class="author-feature">
+                    <div class="author-image">
+                        <img src="https://via.placeholder.com/80" alt="Featured Author">
+                    </div>
+                    <div class="author-info">
+                        <h3>George RR Martin</h3>
+                        <span class="author-tag">author</span>
+                        <p class="author-description">
+                            "Fire and Blood" tells the story of the Targaryen dynasty in Westeros, chronicling the conquest of the Seven Kingdoms by House Targaryen. It also covers the Targaryen civil war known as the Dance of the Dragons.
+                        </p>
+                        <div class="navigation-buttons">
+                            <button class="nav-prev"><i class="fas fa-arrow-left"></i></button>
+                            <button class="nav-next"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Book Carousel Section -->
+            <section class="book-carousel">
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="https://via.placeholder.com/150x220/0066cc/ffffff?text=Beauty+and+the+Beast" alt="Beauty and the Beast">
+                    </div>
+                    <h3>Beauty and the Beast</h3>
+                    <p class="publisher">Disney</p>
+                </div>
+                <div class="book-item featured">
+                    <div class="book-cover">
+                        <img src="https://via.placeholder.com/180x260/cc0000/ffffff?text=Fire+and+Blood" alt="Fire and Blood">
+                    </div>
+                    <h3>Fire and Blood - A Game of Thrones series</h3>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="https://via.placeholder.com/150x220/333333/ffffff?text=Chronicles+of+Narnia" alt="The Chronicles of Narnia">
+                    </div>
+                    <h3>The Chronicles of Narnia</h3>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="https://via.placeholder.com/150x220/cc0000/ffffff?text=Deadpool+Samurai" alt="Deadpool Samurai">
+                    </div>
+                    <h3>Deadpool Samurai edition</h3>
+                    <p class="publisher">Marvel</p>
+                </div>
+            </section>
+
+            <!-- Collection Promotion -->
+            <section class="collection-promo">
+                <div class="promo-icon"><i class="fas fa-gift"></i></div>
+                <p>Got chance to check out the <span class="highlight">new collection</span> of Harry Potter? It's a must-read for any fan of the series, don't miss out!</p>
+                <div class="progress">
+                    <span>04</span> / 60 books
+                </div>
+            </section>
+
+            <!-- Classics Section -->
+            <section class="category-section">
+                <div class="section-header">
+                    <h2>Classics</h2>
+                    <a href="#" class="view-all">Show all</a>
+                </div>
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/120x180/000033/ffffff?text=City+of+Ashes" alt="City of Ashes">
+                        </div>
+                        <h3>City of Ashes</h3>
+                        <p class="author">by Friedrich Wilhelm</p>
+                        <p class="price">$40.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/120x180/330000/ffffff?text=City+of+Ashes" alt="City of Ashes">
+                        </div>
+                        <h3>City of Ashes</h3>
+                        <p class="author">by Friedrich Wilhelm</p>
+                        <p class="price">$45.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/120x180/660000/ffffff?text=City+of+Ashes" alt="City of Ashes">
+                        </div>
+                        <h3>City of Ashes</h3>
+                        <p class="author">by Friedrich Wilhelm</p>
+                        <p class="price">$40.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/120x180/003366/ffffff?text=Birthright" alt="Birthright">
+                        </div>
+                        <h3>Birthright</h3>
+                        <p class="author">by Friedrich Wilhelm</p>
+                        <p class="price">$42.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/120x180/006699/ffffff?text=Malefica" alt="Malefica">
+                        </div>
+                        <h3>Malefica</h3>
+                        <p class="author">by Friedrich Wilhelm</p>
+                        <p class="price">$40.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Romance Section -->
+            <section class="category-section">
+                <div class="section-header">
+                    <h2>Romance</h2>
+                    <a href="#" class="view-all">Show all</a>
+                </div>
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/120x180/666666/ffffff?text=City+of+Ashes" alt="City of Ashes">
+                        </div>
+                        <h3>City of Ashes</h3>
+                        <p class="author">by Friedrich Wilhelm</p>
+                        <p class="price">$40.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/120x180/ff3366/ffffff?text=Fields+Forever" alt="Fields Forever">
+                        </div>
+                        <h3>Fields Forever</h3>
+                        <p class="author">by Friedrich Wilhelm</p>
+                        <p class="price">$40.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/120x180/009999/ffffff?text=The+Love+Hypothesis" alt="The Love Hypothesis">
+                        </div>
+                        <h3>The Love Hypothesis</h3>
+                        <p class="author">by Ali Hazelwood</p>
+                        <p class="price">$40.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/120x180/cccccc/000000?text=Historicism" alt="Historicism">
+                        </div>
+                        <h3>Historicism</h3>
+                        <p class="author">by Friedrich Wilhelm</p>
+                        <p class="price">$40.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/120x180/999966/ffffff?text=A+Tale+of+Two+Cities" alt="A Tale of Two Cities">
+                        </div>
+                        <h3>A Tale of Two Cities</h3>
+                        <p class="author">by Charles Dickens</p>
+                        <p class="price">$38.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Author Section -->
+            <section class="featured-author">
+                <h2>Author of the Week</h2>
+                <div class="author-profile">
+                    <div class="author-photo">
+                        <img src="https://via.placeholder.com/200" alt="Sandro Loren">
+                    </div>
+                    <div class="author-details">
+                        <h3>Sandro Loren</h3>
+                        <p class="author-meta">Poet, Author</p>
+                        <p class="author-bio">
+                            Bicycle rights blue bottle paths, Hella Life service bespoke try craft beer whatever street art fap. Hashtag typewriter banjo vix, squid saffron High Life Brooklyn tour tousled chirpesse. PBRB coffee chicharrón, fade bag blog post-ironic. Single-origin coffee put a bird on it.
+                        </p>
+                        <div class="featured-books">
+                            <div class="mini-book-card">
+                                <img src="https://via.placeholder.com/80x120/666666/ffffff?text=City+of+Ashes" alt="City of Ashes">
+                                <div>
+                                    <h4>City of Ashes</h4>
+                                    <p>$40.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize the site functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const bookTitle = this.parentElement.querySelector('h3').textContent;
+                    alert(`Added "${bookTitle}" to your cart!`);
+                });
+            });
+
+            // Amazon affiliate link handler
+            function createAmazonAffiliateLink(asin, title) {
+                return `https://www.amazon.com/dp/${asin}/ref=nosim?tag=levireads-20&linkCode=osi&th=1&psc=1`;
+            }
+
+            // Example book ASINs (you would replace these with actual Amazon ASINs)
+            const bookASINs = {
+                "Beauty and the Beast": "B01GUIWKI8",
+                "Fire and Blood": "152479628X",
+                "The Chronicles of Narnia": "0060598247",
+                "Deadpool Samurai": "1302945351",
+                "City of Ashes": "1481455974",
+                "Birthright": "B08QZ2BCJF",
+                "The Love Hypothesis": "0593336828",
+                "A Tale of Two Cities": "1503219704"
+            };
+
+            // Replace placeholder images with actual book covers and add affiliate links
+            const bookItems = document.querySelectorAll('.book-item, .book-card');
+            bookItems.forEach(book => {
+                const titleElement = book.querySelector('h3');
+                if (titleElement) {
+                    const title = titleElement.textContent;
+                    const shortTitle = title.split(" - ")[0].trim();
+                    
+                    if (bookASINs[shortTitle]) {
+                        // Create affiliate link wrapper
+                        const affiliateLink = document.createElement('a');
+                        affiliateLink.href = createAmazonAffiliateLink(bookASINs[shortTitle], shortTitle);
+                        affiliateLink.target = "_blank";
+                        affiliateLink.rel = "nofollow sponsored";
+                        affiliateLink.className = "affiliate-link";
+                        
+                        // Replace add to cart button with view on Amazon
+                        const button = book.querySelector('.add-to-cart');
+                        if (button) {
+                            button.textContent = "View on Amazon";
+                            button.className = "amazon-button";
+                            button.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                window.open(affiliateLink.href, '_blank');
+                            });
+                        }
+                        
+                        // Make cover clickable
+                        const cover = book.querySelector('.book-cover');
+                        if (cover) {
+                            cover.style.cursor = "pointer";
+                            cover.addEventListener('click', function() {
+                                window.open(affiliateLink.href, '_blank');
+                            });
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
