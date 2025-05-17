@@ -1,88 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Affiliate Bookshelf</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BookShelf - Premium Reading Experience</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="sidebar">
-    <a href="#" class="home-icon">🏠</a>
-  </div>
-  <main class="content">
-    <h1>My Bookshelf</h1>
-    <div class="book-grid">
-      <div class="book-card">
-        <a href="https://affiliate-site.com/odyssey?ref=yourid" target="_blank">
-          <img src="images/odyssey.jpg" alt="The Odyssey by Homer">
-        </a>
-        <div class="book-info">
-          <h3>The Odyssey</h3>
-          <a href="https://affiliate-site.com/odyssey?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
-        </div>
-      </div>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+            </div>
+            <ul class="nav-items">
+                <li class="active"><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#"><i class="fas fa-book"></i></a></li>
+                <li><a href="#"><i class="far fa-clock"></i></a></li>
+                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-cog"></i></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
 
-      <div class="book-card">
-        <a href="https://affiliate-site.com/lesmiserables?ref=yourid" target="_blank">
-          <img src="images/lesmiserables.jpg" alt="Les Misérables by Victor Hugo">
-        </a>
-        <div class="book-info">
-          <h3>Les Misérables</h3>
-          <a href="https://affiliate-site.com/lesmiserables?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
-        </div>
-      </div>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header with Search and User Info -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input
+                        type="text"
+                        placeholder="Search book name, author, edition..."
+                    />
+                </div>
+                <div class="user-actions">
+                    <div class="user-profile">
+                        <img src="/api/placeholder/32/32" alt="Levitive" />
+                        <span>Levitive</span>
+                    </div>
+                    <div class="notifications">
+                        <i class="far fa-bell"></i>
+                    </div>
+                </div>
+            </header>
 
-      <div class="book-card">
-        <a href="https://affiliate-site.com/gilmore?ref=yourid" target="_blank">
-          <img src="images/gilmore.jpg" alt="Gilmore Pretty Shelf">
-        </a>
-        <div class="book-info">
-          <h3>Pretty Bookshelf</h3>
-          <a href="https://affiliate-site.com/gilmore?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
-        </div>
-      </div>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Keep the story going..</h1>
+                    <p>
+                        Don't let the story end just yet. Continue reading your last
+                        book and immerse yourself in the world of literature.
+                    </p>
+                    <button class="cta-button">
+                        Start reading <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
 
-      <div class="book-card">
-        <a href="https://affiliate-site.com/lifehack?ref=yourid" target="_blank">
-          <img src="images/lifehack.jpg" alt="30 Books Everyone Should Read">
-        </a>
-        <div class="book-info">
-          <h3>30 Must-Reads</h3>
-          <a href="https://affiliate-site.com/lifehack?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
-        </div>
-      </div>
+                <!-- Featured Author Card -->
+                <div class="author-feature">
+                    <div class="author-options">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="author-image">
+                        <img src="/api/placeholder/80/80" alt="George RR Martin" />
+                    </div>
+                    <div class="author-info">
+                        <h3>George RR Martin</h3>
+                        <span class="author-tag">author</span>
+                        <p class="author-description">
+                            "Fire and Blood" tells the story of the Targaryen dynasty in
+                            Westeros, chronicling the conquest of the Seven Kingdoms by House
+                            Targaryen. It also covers the Targaryen civil war known as the
+                            Dance of the Dragons.
+                        </p>
+                        <div class="navigation-buttons">
+                            <button class="nav-prev">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <button class="nav-next">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <div class="book-card">
-        <a href="https://affiliate-site.com/lovehypothesis?ref=yourid" target="_blank">
-          <img src="images/lovehypothesis.jpg" alt="The Love Hypothesis">
-        </a>
-        <div class="book-info">
-          <h3>The Love Hypothesis</h3>
-          <a href="https://affiliate-site.com/lovehypothesis?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
-        </div>
-      </div>
+            <!-- Book Carousel Section -->
+            <section class="book-carousel">
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="/api/placeholder/150/220" alt="Beauty and the Beast" />
+                    </div>
+                    <h3>Beauty and the Beast</h3>
+                    <p class="publisher">Disney</p>
+                </div>
+                <div class="book-item featured">
+                    <div class="book-cover">
+                        <img src="/api/placeholder/180/260" alt="Fire and Blood" />
+                    </div>
+                    <h3>Fire and Blood - A Game of Thrones series</h3>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img
+                            src="/api/placeholder/150/220"
+                            alt="The Chronicles of Narnia"
+                        />
+                    </div>
+                    <h3>The Chronicles of Narnia</h3>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="/api/placeholder/150/220" alt="Deadpool Samurai" />
+                    </div>
+                    <h3>Deadpool Samurai edition</h3>
+                    <p class="publisher">Marvel</p>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="/api/placeholder/150/220" alt="A Long Way Home" />
+                    </div>
+                    <h3>A Long Way Home</h3>
+                    <p class="publisher">The Book House</p>
+                </div>
+            </section>
 
-      <div class="book-card">
-        <a href="https://affiliate-site.com/finalempire?ref=yourid" target="_blank">
-          <img src="images/finalempire.jpg" alt="The Final Empire">
-        </a>
-        <div class="book-info">
-          <h3>The Final Empire</h3>
-          <a href="https://affiliate-site.com/finalempire?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="book-card">
-        <a href="https://affiliate-site.com/alloyoflaw?ref=yourid" target="_blank">
-          <img src="images/alloyoflaw.jpg" alt="The Alloy of Law">
-        </a>
-        <div class="book-info">
-          <h3>The Alloy of Law</h3>
-          <a href="https://affiliate-site.com/alloyoflaw?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
-        </div>
-      </div>
+            <!-- Collection Promotion -->
+            <section class="collection-promo">
+                <div class="promo-icon"><i class="fas fa-gift"></i></div>
+                <p>
+                    Got chance to check out the
+                    <span class="highlight">new collection</span> of Harry Potter? It's a
+                    must-read for any fan of the series, don't miss out!
+                </p>
+                <div class="progress">
+                    <span>04</span> / 60 books
+                </div>
+            </section>
+        </main>
     </div>
-  </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Handle book carousel navigation
+            const carousel = document.querySelector('.book-carousel');
+            const prevBtn = document.querySelector('.nav-prev');
+            const nextBtn = document.querySelector('.nav-next');
+
+            prevBtn.addEventListener('click', function () {
+                carousel.scrollBy({
+                    left: -200,
+                    behavior: 'smooth',
+                });
+            });
+
+            nextBtn.addEventListener('click', function () {
+                carousel.scrollBy({
+                    left: 200,
+                    behavior: 'smooth',
+                });
+            });
+        });
+    </script>
 </body>
 </html>
