@@ -1,123 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeviReads - Your Digital Library</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Affiliate Bookshelf</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <div class="logo">
-                <i class="fas fa-book-open"></i>
-                <span>LeviReads</span>
-            </div>
-            <ul class="nav-items">
-                <li class="active"><i class="fas fa-home"></i> Home</li>
-                <li><i class="fas fa-book"></i> Library</li>
-                <li><i class="far fa-clock"></i> Recent</li>
-                <li><i class="far fa-heart"></i> Favorites</li>
-                <li><i class="fas fa-cog"></i> Settings</li>
-            </ul>
+  <div class="sidebar">
+    <a href="#" class="home-icon">🏠</a>
+  </div>
+  <main class="content">
+    <h1>My Bookshelf</h1>
+    <div class="book-grid">
+      <div class="book-card">
+        <a href="https://affiliate-site.com/odyssey?ref=yourid" target="_blank">
+          <img src="images/odyssey.jpg" alt="The Odyssey by Homer">
+        </a>
+        <div class="book-info">
+          <h3>The Odyssey</h3>
+          <a href="https://affiliate-site.com/odyssey?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
         </div>
-        
-        <!-- Main Content -->
-        <div class="main-content">
-            <div class="search-bar">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="Search book name, author, genre...">
-                <div class="user-profile">
-                    <img src="https://via.placeholder.com/40" alt="User Profile">
-                    <i class="far fa-bell"></i>
-                </div>
-            </div>
-            
-            <!-- Hero Section -->
-            <div class="hero-section">
-                <div class="hero-content">
-                    <h1>Keep the story going...</h1>
-                    <p>Don't let the story end just yet. Continue reading your last book and immerse yourself in the world of literature.</p>
-                    <button class="primary-btn">Start reading <i class="fas fa-arrow-right"></i></button>
-                </div>
-                <div class="decoration-dots">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-            
-            <!-- Featured Books -->
-            <div class="section-heading">
-                <h2>Featured Books</h2>
-                <div class="controls">
-                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            
-            <div class="books-grid">
-                <!-- Book Item 1 -->
-                <div class="book-item">
-                    <div class="book-cover">
-                        <img src="images/fire-and-blood.jpg" alt="Fire and Blood" onerror="this.src='https://via.placeholder.com/150x220?text=Fire+and+Blood'">
-                    </div>
-                    <h3>Fire and Blood</h3>
-                    <p class="author">George RR Martin</p>
-                    <p class="description">"Fire and Blood" tells the story of the Targaryen dynasty in Westeros, chronicling the conquest of the Seven Kingdoms by House Targaryen. It also covers the Targaryen civil war known as the Dance of the Dragons.</p>
-                    <a href="#" class="read-more">Read more</a>
-                </div>
-                
-                <!-- Book Item 2 -->
-                <div class="book-item">
-                    <div class="book-cover">
-                        <img src="images/beauty-and-the-beast.jpg" alt="Beauty and the Beast" onerror="this.src='https://via.placeholder.com/150x220?text=Beauty+and+the+Beast'">
-                    </div>
-                    <h3>Beauty and the Beast</h3>
-                    <p class="author">Disney</p>
-                    <p class="description">A classic tale of love and transformation, where a young woman named Belle discovers the true heart of a beast.</p>
-                    <a href="#" class="read-more">Read more</a>
-                </div>
-                
-                <!-- Book Item 3 -->
-                <div class="book-item">
-                    <div class="book-cover">
-                        <img src="images/chronicles-of-narnia.jpg" alt="The Chronicles of Narnia" onerror="this.src='https://via.placeholder.com/150x220?text=Chronicles+of+Narnia'">
-                    </div>
-                    <h3>The Chronicles of Narnia</h3>
-                    <p class="author">C.S. Lewis</p>
-                    <p class="description">Follow the adventures of children who play central roles in the unfolding history of the magical land of Narnia.</p>
-                    <a href="#" class="read-more">Read more</a>
-                </div>
-            </div>
-            
-            <!-- Reading Now Section -->
-            <div class="section-heading">
-                <h2>Continue Reading</h2>
-                <a href="#" class="view-all">View all</a>
-            </div>
-            
-            <div class="continue-reading">
-                <div class="reading-card">
-                    <div class="book-info">
-                        <img src="images/game-of-thrones.jpg" alt="A Game of Thrones" onerror="this.src='https://via.placeholder.com/80x120?text=Game+of+Thrones'">
-                        <div>
-                            <h3>A Game of Thrones</h3>
-                            <p>George RR Martin</p>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%;"></div>
-                            </div>
-                            <p class="progress-text">75% completed</p>
-                        </div>
-                    </div>
-                    <button class="continue-btn">Continue</button>
-                </div>
-            </div>
+      </div>
+
+      <div class="book-card">
+        <a href="https://affiliate-site.com/lesmiserables?ref=yourid" target="_blank">
+          <img src="images/lesmiserables.jpg" alt="Les Misérables by Victor Hugo">
+        </a>
+        <div class="book-info">
+          <h3>Les Misérables</h3>
+          <a href="https://affiliate-site.com/lesmiserables?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
         </div>
+      </div>
+
+      <div class="book-card">
+        <a href="https://affiliate-site.com/gilmore?ref=yourid" target="_blank">
+          <img src="images/gilmore.jpg" alt="Gilmore Pretty Shelf">
+        </a>
+        <div class="book-info">
+          <h3>Pretty Bookshelf</h3>
+          <a href="https://affiliate-site.com/gilmore?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <a href="https://affiliate-site.com/lifehack?ref=yourid" target="_blank">
+          <img src="images/lifehack.jpg" alt="30 Books Everyone Should Read">
+        </a>
+        <div class="book-info">
+          <h3>30 Must-Reads</h3>
+          <a href="https://affiliate-site.com/lifehack?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <a href="https://affiliate-site.com/lovehypothesis?ref=yourid" target="_blank">
+          <img src="images/lovehypothesis.jpg" alt="The Love Hypothesis">
+        </a>
+        <div class="book-info">
+          <h3>The Love Hypothesis</h3>
+          <a href="https://affiliate-site.com/lovehypothesis?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <a href="https://affiliate-site.com/finalempire?ref=yourid" target="_blank">
+          <img src="images/finalempire.jpg" alt="The Final Empire">
+        </a>
+        <div class="book-info">
+          <h3>The Final Empire</h3>
+          <a href="https://affiliate-site.com/finalempire?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <a href="https://affiliate-site.com/alloyoflaw?ref=yourid" target="_blank">
+          <img src="images/alloyoflaw.jpg" alt="The Alloy of Law">
+        </a>
+        <div class="book-info">
+          <h3>The Alloy of Law</h3>
+          <a href="https://affiliate-site.com/alloyoflaw?ref=yourid" class="buy-button" target="_blank">Buy Now</a>
+        </div>
+      </div>
     </div>
-    
-    <script src="script.js"></script>
+  </main>
 </body>
 </html>
