@@ -1,11 +1,23 @@
-
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f7f2;
-    color: #111;
-    line-height: 1.6;
-    padding: 20px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.split-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-panel {
+  width: 240px; /* Adjust width as needed */
+  background-color: #f2f2f2; /* light gray */
+  padding: 20px;
+}
+
+.right-panel {
+  flex-grow: 1;
+  background-color: #faf6f0; /* off-white or beige */
+  padding: 40px;
 }
 
 header {
