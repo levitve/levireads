@@ -440,3 +440,105 @@ body {
         width: 100%;
     }
 }
+.book-link {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.book-link:hover {
+    transform: translateY(-5px);
+}
+
+/* Price display */
+.price {
+    display: block;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Overlay effect for book covers */
+.book-cover {
+    position: relative;
+    overflow: hidden;
+}
+
+.book-overlay {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    background-color: rgba(30, 41, 59, 0.8);
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+    transition: bottom 0.3s ease;
+}
+
+.book-link:hover .book-overlay {
+    bottom: 0;
+}
+
+.buy-now {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Collection promo link */
+.promo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-left: auto;
+    transition: background-color 0.2s ease;
+}
+
+.promo-link:hover {
+    background-color: #0f172a;
+}
+
+/* Updated collection promo layout for the link */
+.collection-promo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.collection-promo p {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+/* Optional: Affiliate notification popup */
+.affiliate-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    box-shadow: var(--shadow-md);
+    z-index: 1000;
+    animation: fadeIn 0.3s, fadeOut 0.3s 2.7s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(20px); }
+}
