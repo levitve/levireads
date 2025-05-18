@@ -179,31 +179,29 @@
     
     <!-- Additional scripts for functionality -->
     <script>
-        // Author quotes for rotation
-      const authorQuotes = [
+       // Author quotes for rotation
+const authorQuotes = [
     { author: "Stephen King", quote: "Books are a uniquely portable magic.", image: "assets/images/stephen.jpg" },
     { author: "J.K. Rowling", quote: "I do believe something very magical can happen when you read a good book.", image: "assets/images/rowling.jpg" },
     { author: "George R.R. Martin", quote: "A reader lives a thousand lives before he dies. The man who never reads lives only one.", image: "assets/images/george.jpg" },
     { author: "Neil Gaiman", quote: "A book is a dream that you hold in your hand.", image: "assets/images/gaiman.jpg" }
 ];
 
-        ];
-        
-        let currentAuthorIndex = 0;
-        
-        // Function to update featured author
-        function updateFeaturedAuthor() {
-            const authorQuote = document.getElementById('author-quote');
-            const authorName = document.querySelector('.author-info h3');
-            const authorImage = document.querySelector('.author-image img');
-            
-            const author = authorQuotes[currentAuthorIndex];
-            
-            authorQuote.textContent = author.quote;
-            authorName.textContent = author.author;
-            authorImage.src = author.image;
-            authorImage.alt = author.author;
-        }
+let currentAuthorIndex = 0;
+
+// Function to update featured author
+function updateFeaturedAuthor() {
+    const authorQuote = document.getElementById('author-quote');
+    const authorName = document.querySelector('.author-info h3');
+    const authorImage = document.querySelector('.author-image img');
+    
+    const author = authorQuotes[currentAuthorIndex];
+    
+    authorQuote.textContent = author.quote;
+    authorName.textContent = author.author;
+    authorImage.src = author.image;
+    authorImage.alt = author.author;
+}
         
         // Initialize author display
         document.addEventListener('DOMContentLoaded', function() {
