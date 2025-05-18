@@ -253,24 +253,31 @@ body {
   line-height: 1.5;
 }
 
-.author-navigation {
+/* User icon circles */
+.user-icons {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
+  gap: 10px;
+  margin-bottom: 12px;
 }
 
-.author-icons {
+.icon-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  color: #666;
+  font-size: 14px;
 }
 
-.author-icons i {
-  font-size: 1.3rem;
-  color: #4a6fa1;
+.icon-circle:first-child {
+  background-color: #4a6fa1;
+  color: white;
 }
 
+/* Navigation buttons */
 .navigation-buttons {
   display: flex;
   gap: 10px;
@@ -296,7 +303,6 @@ body {
 .nav-prev i, .nav-next i {
   color: #4a6fa1;
 }
-
 /* Book Carousel */
 .book-carousel {
     display: flex;
