@@ -161,7 +161,7 @@ body {
 .hero-section {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem; /* Reduced from 3rem to 1.5rem */
     gap: 2rem;
 }
 
@@ -202,12 +202,13 @@ body {
 
 /* Author feature styles */
 .author-feature {
-  background-color: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  position: relative;
-  margin-top: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 1rem; /* Reduced margin bottom */
 }
 
 .author-options {
@@ -310,6 +311,7 @@ body {
     overflow-x: auto;
     padding: 1rem 0;
     margin-bottom: 2rem;
+    margin-top: -1rem; /* Added negative margin to pull it up */
     scroll-behavior: smooth;
 }
 
