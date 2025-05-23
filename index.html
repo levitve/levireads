@@ -1,76 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Levireads | Online Bookstore</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BookShelf - Find Your Next Book</title>
+    <meta name="description" content="Discover amazing books at the best prices. Browse our curated collection of bestsellers, classics, and hidden gems.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+            </div>
+            <ul class="nav-items">
+                <li class="active"><a href="#" title="Home"><i class="fas fa-home"></i></a></li>
+                <li><a href="#categories" title="Categories"><i class="fas fa-book"></i></a></li>
+                <li><a href="#recent" title="Recent Releases"><i class="far fa-clock"></i></a></li>
+                <li><a href="#favorites" title="Favorites"><i class="far fa-heart"></i></a></li>
+                <li><a href="#settings" title="Settings"><i class="fas fa-cog"></i></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
 
-  <!-- Navbar -->
-  <header>
-    <div class="navbar">
-      <div class="logo">Levireads</div>
-      <input type="text" placeholder="Search books...">
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Categories</a>
-        <a href="#">Deals</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header with Search and User Info -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search book name, author, edition..." />
+                </div>
+                <div class="user-actions">
+                    <div class="user-profile">
+                        <img src="assets/images/levi.jpg" alt="levi" />
+                        <span>Levitive</span>
+                
+                    </div>
+                    <div class="notifications">
+                        <i class="far fa-bell"></i>
+                    </div>
+                </div>
+            </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>50% Off Hundreds Of Books</h1>
-      <p>Online And In Stores Only</p>
-      <button>Shop Now</button>
-    </div>
-    <div class="hero-imgs">
-      <img src="assets/images/hero1.jpg" alt="Book promo" />
-      <img src="assets/images/hero2.jpg" alt="Book promo" />
-    </div>
-  </section>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Keep the story going..</h1>
+                    <p>
+                        Don't let the story end just yet. Continue reading your last
+                        book and immerse yourself in the world of literature.
+                    </p>
+                    <button class="cta-button">
+                        Start reading <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
 
-  <!-- Bestselling Books -->
-  <section class="section">
-    <h2>Bestselling Books</h2>
-    <div class="book-carousel">
-      <div class="book-card"><img src="assets/images/book1.jpg"><p>Book Title</p><span>$19.99</span></div>
-      <div class="book-card"><img src="assets/images/book2.jpg"><p>Book Title</p><span>$14.99</span></div>
-      <!-- Add more book cards -->
-    </div>
-  </section>
+                <!-- Featured Author Card -->
+                <div class="author-feature">
+                    <div class="author-options">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="author-image">
+                        <img src="/api/placeholder/80/80" alt="Featured Author" />
+                    </div>
+                    <div class="author-info">
+                        <h3>Featured Author</h3>
+                        <span class="author-tag">author</span>
+                        <p class="author-description" id="author-quote">
+                            Loading author quote...
+                        </p>
+                        <!-- Font Awesome -->
+                    <i class="fa fa-user"></i>
+                    <!-- Bootstrap Icons -->
+                    <i class="bi bi-person-circle"></i>
+                        <div class="navigation-buttons">
+                            <button class="nav-prev">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <button class="nav-next">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <!-- Deals of the Week -->
-  <section class="section deals">
-    <h2>Deals Of The Week</h2>
-    <div class="deal-box">
-      <div class="deal-text">
-        <h3>The Best New Books of January</h3>
-        <p>Hurry! The deals roll out soon.</p>
-        <div id="countdown">00:00:00</div>
-      </div>
-      <img src="assets/images/deal.jpg" alt="Deal books" />
-    </div>
-  </section>
+            <!-- Book Carousel Section will be populated by JavaScript -->
+            <section class="book-carousel">
+                <!-- Books will be dynamically loaded here -->
+                <div class="loading-indicator">Loading books...</div>
+            </section>
 
-  <!-- What's In Trend -->
-  <section class="section trend">
-    <h2>What’s In Trend</h2>
-    <div class="book-grid">
-      <div class="book-card">
-        <img src="assets/images/book3.jpg">
-        <p><strong>Title</strong><br>Description of the book goes here.</p>
-        <span>$17.99</span>
-      </div>
-      <!-- Add more trending book cards -->
+            <!-- Collection Promotion -->
+            <section class="collection-promo">
+                <div class="promo-icon"><i class="fas fa-gift"></i></div>
+                <p>
+                    Got chance to check out the
+                    <span class="highlight">new collection</span> of bestsellers? It's a
+                    must-read selection curated just for you!
+                </p>
+                <a href="#collection" class="promo-link">View Collection <i class="fas fa-arrow-right"></i></a>
+            </section>
+            
+            <!-- Recent Additions Section -->
+            <section class="recent-additions" id="recent">
+                <h2>Recent Additions</h2>
+                <div class="book-grid">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </section>
+            
+            <!-- Popular Categories -->
+            <section class="categories" id="categories">
+                <h2>Browse by Category</h2>
+                <div class="category-list">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </section>
+            
+            <!-- Newsletter Signup for Traffic Building -->
+            <section class="newsletter">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to get the latest book recommendations and exclusive deals.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+            
+            <!-- Footer with SEO-friendly links -->
+            <footer class="site-footer">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Explore</h3>
+                        <ul>
+                            <li><a href="#bestsellers">Bestsellers</a></li>
+                            <li><a href="#new-releases">New Releases</a></li>
+                            <li><a href="#deals">Deals & Discounts</a></li>
+                            <li><a href="#recommendations">Personal Recommendations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Popular Genres</h3>
+                        <ul>
+                            <li><a href="#fiction">Fiction</a></li>
+                            <li><a href="#non-fiction">Non-Fiction</a></li>
+                            <li><a href="#sci-fi">Science Fiction</a></li>
+                            <li><a href="#mystery">Mystery & Thriller</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#affiliate">Affiliate Disclosure</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2025 BookShelf. All book recommendations are carefully selected. As an Amazon Associate, we earn from qualifying purchases.</p>
+                </div>
+            </footer>
+        </main>
     </div>
-  </section>
 
-  <script src="assets/js/script.js"></script>
+    <!-- Load our book management script -->
+    <script src="books.js"></script>
+    
+    <!-- Additional scripts for functionality -->
+    <script>
+        // Author quotes for rotation
+      const authorQuotes = [
+    { author: "Stephen King", quote: "Books are a uniquely portable magic.", image: "assets/images/stephen.jpg" },
+    { author: "J.K. Rowling", quote: "I do believe something very magical can happen when you read a good book.", image: "assets/images/rowling.jpg" },
+    { author: "George R.R. Martin", quote: "A reader lives a thousand lives before he dies. The man who never reads lives only one.", image: "assets/images/george.jpg" },
+    { author: "Neil Gaiman", quote: "A book is a dream that you hold in your hand.", image: "assets/images/gaiman.jpg" }
+];
+    authorImage.src = author.image;
+
+        ];
+        
+        let currentAuthorIndex = 0;
+        
+        // Function to update featured author
+        function updateFeaturedAuthor() {
+            const authorQuote = document.getElementById('author-quote');
+            const authorName = document.querySelector('.author-info h3');
+            const authorImage = document.querySelector('.author-image img');
+            
+            const author = authorQuotes[currentAuthorIndex];
+            
+            authorQuote.textContent = author.quote;
+            authorName.textContent = author.author;
+            authorImage.src = author.image;
+            authorImage.alt = author.author;
+        }
+        
+        // Initialize author display
+        document.addEventListener('DOMContentLoaded', function() {
+            updateFeaturedAuthor();
+            
+            // Set up author navigation
+            document.querySelector('.nav-prev').addEventListener('click', function() {
+                currentAuthorIndex = (currentAuthorIndex - 1 + authorQuotes.length) % authorQuotes.length;
+                updateFeaturedAuthor();
+            });
+            
+            document.querySelector('.nav-next').addEventListener('click', function() {
+                currentAuthorIndex = (currentAuthorIndex + 1) % authorQuotes.length;
+                updateFeaturedAuthor();
+            });
+            
+            // Newsletter form submission
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    alert(Thank you for subscribing with ${email}! You'll receive our book recommendations soon.);
+                    this.reset();
+                });
+            }
+        });
+    </script>
 </body>
 </html>
