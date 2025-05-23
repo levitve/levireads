@@ -220,3 +220,29 @@ document.addEventListener('DOMContentLoaded', function() {
 function showNotification(message) {
     // Remove existing notification
     const existingNot
+// Countdown Timer
+function startCountdown(durationInSeconds, displayElementId) {
+  const display = document.getElementById(displayElementId);
+  let remaining = durationInSeconds;
+
+  const interval = setInterval(() => {
+    const hours = String(Math.floor(remaining / 3600)).padStart(2, '0');
+    const minutes = String(Math.floor((remaining % 3600) / 60)).padStart(2, '0');
+    const seconds = String(remaining % 60).padStart(2, '0');
+
+    display.textContent = `${hours}:${minutes}:${seconds}`;
+
+    if (remaining <= 0) {
+      clearInterval(interval);
+      display.textContent = "Deal Expired";
+    }
+
+    remaining--;
+  }, 1000);
+}
+
+// Start the countdown on page load
+document.addEventListener("DOMContentLoaded", () => {
+  // Set to 1 hour = 3600 seconds (adjust as needed)
+  startCountdown(3600, "countdown");
+});
